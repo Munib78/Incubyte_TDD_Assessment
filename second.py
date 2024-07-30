@@ -1,12 +1,18 @@
 def add(input_string) -> int:
+    """
+    This function takes a string of comma-separated numbers and returns their sum.
+    If the input string is empty, it returns 0.
+    """
 
-    """This is the second case where it should  handle any amount of numbers."""
+    # handle comma-separated numbers
+    numbers = input_string.split(",")
 
-    nums = input_string.split(",")
+    #store the sum of the numbers
+    total_sum = 0
 
-    sums_nums = 0
+    for number in numbers:
+        # Convert the current number to an integer and add it to the total sum
+        total_sum += int(number)
 
-    for j in nums:
-        sums_nums = sums_nums + int(j)
-
-    return sums_nums
+    # sum of all numbers
+    return total_sum
