@@ -12,7 +12,7 @@ def test_handle_multiple_negative_numbers():
         sixth.add("//\n\n4\n2\n-2\n-3\n4\n-5")
 
 def test_handle_without_negative_numbers():
- 
+    # Test if the function gives output when all positive numbers and number grater than 1000 are used 
     result = sixth.add("//\n\n4\n2\n1001\n6")
 
     assert result == 12
